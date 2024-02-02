@@ -99,41 +99,13 @@ h1 {
     margin: 0;
 }
 
-@media only screen and (max-width: 768px) {
-    body {
-        font-size: 16px;
-    }
+footer {
+    color: rgb(32, 32, 32);
+    font-size: 15px;
+}
 
-    li {
-        margin-left: 10px; /* Změna mezer mezi položkami navigace pro mobilní zařízení */
-    }
-
-    li a {
-        font-size: 30px; /* Změna velikosti textu navigace pro mobilní zařízení */
-    }
-
-    h1 {
-        font-size: 50px;
-        margin-top: 100px; /* Přizpůsobení mezery nad nadpisem pro mobilní zařízení */
-    }
-
-    #obrazek {
-        padding-left: 20px;
-        padding-top: 150px; /* Přizpůsobení polohy obrázku pro mobilní zařízení */
-        width: 50%; /* Přizpůsobení šířky obrázku pro mobilní zařízení */
-    }
-
-    #middle {
-        margin-top: 10px;
-        font-size: 18px; /* Příklad změny velikosti textu v části middle pro mobilní zařízení */
-    }
-
-    .zacit-button {
-        font-size: 50px;
-        margin-top: 20px;
-    }
-
-    #elapsedTime {
-        font-size: 8px;
-    }
+.sedá-čára {
+    border-top: 1px solid rgb(32, 32, 32);
+    margin-top: 125px;
+    margin-bottom: 3px;
 }
