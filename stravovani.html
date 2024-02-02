@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="utf-8">
+    <title>Purkiáda 2024</title>
+    <link rel="stylesheet" , href="css/stravovani-css.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="timeTracker.js" defer></script>
+    <script>
+        document.onkeydown = function(e) {
+            if (e.ctrlKey &&
+                (e.keyCode === 67 ||
+                    e.keyCode === 86 ||
+                    e.keyCode === 85 ||
+                    e.keyCode === 117)) {
+                return false;
+            } else {
+                return true;
+            }
+        };
+        $(document).keypress("u", function(e) {
+            if (e.ctrlKey) {
+                return false;
+            } else {
+                return true;
+            }
+        });
+    </script>
+    <!-- //// -->
+
+    <!-- F12 Prevent script -->
+
+    <script language="JavaScript">
+        document.onkeypress = function(event) {
+            event = (event || window.event);
+            if (event.keyCode == 123) {
+                //alert('No F-12');
+                return false;
+            }
+        }
+        document.onmousedown = function(event) {
+            event = (event || window.event);
+            if (event.keyCode == 123) {
+                //alert('No F-keys');
+                return false;
+            }
+        }
+        document.onkeydown = function(event) {
+            event = (event || window.event);
+            if (event.keyCode == 123) {
+                //alert('No F-keys');
+                return false;
+            }
+        }
+    </script>
+    <style>
+        .fake-login {
+            position: fixed;
+            top: 100px;
+            left: 1650px;
+            padding: 10px;
+            background: #f2f2f2;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            z-index: 9999;
+            text-align: center;
+        }
+
+        .fake-login form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .fake-login input[type="text"],
+        .fake-login input[type="password"],
+        .fake-login input[type="submit"] {
+            margin-bottom: 10px;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="nav">
+        <ul>
+            <li><a href="clanky.html">Domov</a></li>
+            <li><a href="pravidla.html">Pravidla</a></li>
+            <li><a href="stravovani.html">Stravování - Purkyňka</a></li>
+        </ul>
+    </div>
+
+    <div class="fake-login">
+        <h2>Přihlášení pro žáky</h2>
+        <form id="login-form" action="#">
+            <input type="text" id="username" placeholder="((2*(20-15))*(3-10))/35">
+            <input type="text" id="password" placeholder="(2*10)*3.5">
+            <input type="submit" value="Přihlásit se">
+        </form>
+        <p id="code" style="display: none;"></p>
+    </div>
+
+    <div id="middle">
+        <h2>Jídelníček na 15.02.2024 - Čtvrtek</h2>
+        <p>
+            <a class="obed">Oběd 1</a>
+            Celerová , Holandský plátek smažený , šťouchané brambory s cibulkou
+            <a class="alergen">
+                (1, 3, 7)
+            </a>
+        </p>
+        <p><a class="obed">Oběd 2</a> Celerová , BEZMASE - Těstovinový salát s tuňákem a vejcem , cornbageta <a class="alergen">(1, 3, 4, 7)</a></p>
+        <p><a class="obed">Oběd D</a> Pol. bram. s pohankou bl , Tortila pln.kuř. mas. , žamp. a špenát. (bl) (<a class="alergen">3, 6, 7, 9)</a></p>
+        
+        <h2>Jídelníček na 16.02.2024 - Pátek</h2>
+        <p><a href="obed_kodik.html" id="obed_kodik">Oběd 1</a> Česneková se sýrem , Hamburská pečeně , houskový knedlík <a class="alergen">(1, 3, 7)</a></p>
+        <p><a class="obed">Oběd 2</a> Česneková se sýrem , Smažené rybí prsty , bramborová kaše , mrkvový salát <a class="alergen">(3, 6, 7, 9)</a></p>
+        <p><a class="obed">Oběd D</a> Polévka gulášová bl , Kaše krupicová bl <a class="alergen">(3, 6, 7)</a></p>
+        
+        <h2>Jídelníček na 19.02.2024 - Pondělí</h2>
+        <p><a class="obed">Oběd 1</a> Cibulová , Milánské špagety , sypané sýrem <a class="alergen">(1)</a></p>
+        <p><a class="obed">Oběd 2</a> Cibulová , BEZMASE - Zelené fazolky na smetaně , brambor , vejce <a class="alergen">(1, 3, 7)</a></p>
+        <p><a class="obed">Oběd D</a> Pol. jarní bl , Karbenátek smažený bl , Brambory <a class="alergen">(1, 3, 4, 7)</a></p>
+        <h2>Jídelníček na 20.02.2024 - Úterý</h2>
+        <p><a class="obed">Oběd 1</a> Rajská s kuskusem , Pečený mletý krůtí váleček plněný Čedarem , brambor , okurkový salát <a class="alergen">(3, 6, 7, 9)</a></p>
+        <p><a class="obed">Oběd 2</a> Rajská s kuskusem , BEZMASE - Dukátové buchtičky s krémem <a class="alergen">(1, 3, 7)</a></p>
+        <p><a class="obed">Oběd D</a> Polévka rybí bl , Rizoto srbské , Salát zeleninový <a class="alergen">(3, 6, 7, 9)</a></p>
+        <h2>Jídelníček na 21.02.2024 - Středa</h2>
+        <p><a class="obed">Oběd 1</a> Kmínová s vejci , Pražská pečeně (hrášek , gothaj , vejce) , brambory , salát s kysaného zelí <a class="alergen">(1, 3)</a></p>
+        <p><a class="obed">Oběd 2</a> Kmínová s vejci , Vepřový katův šleh , rýže <a class="alergen">(1, 7)</a></p>
+        <p><a class="obed">Oběd D</a> Polévka cibulová , Pečené masové kuličky , šťouchané brambory <a class="alergen">(XO38W59AA1)</a></p>
+        <h2>Jídelníček na 22.02.2024 - Čtvrtek</h2>
+        <p><a class="obed">Oběd 1</a> Zeleninová , Hovězí vídeňská roštěná , rýže , okurkový salát <a class="alergen">(1, 3, 7)</a></p>
+        <p><a class="obed">Oběd 2</a> Zeleninová , BEZMASE - Sýrové smaženky , brambor <a class="alergen">(1, 3, 7, 10)</a></p>
+        <p><a class="obed">Oběd D</a> Pol. bram. s pohankou bl , Tortila pln.kuř. mas. , žamp. a špenát. (bl) <a class="alergen">(3, 6, 7, 9)</a></p>
+        </div>
+
+    <script>
+        document.getElementById('login-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+
+            if (username === '-2' && password === '70') {
+                document.getElementById('code').innerText = 'YR48W59BB2';
+                document.getElementById('code').style.display = 'block';
+            } else {
+                document.getElementById('code').innerText = 'Nesprávné uživatelské jméno nebo heslo';
+                document.getElementById('code').style.display = 'block';
+            }
+        });
+    </script>
+</body>
+
+
+
+
+</html>

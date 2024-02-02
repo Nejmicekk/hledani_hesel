@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="utf-8">
+    <title>Purkiáda 2024</title>
+    <link rel="stylesheet", href="css/main-page-css.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="timeTracker.js" defer></script>
+    <script>
+        document.onkeydown = function(e) {
+           if (e.ctrlKey &&
+               (e.keyCode === 67 ||
+                e.keyCode === 86 ||
+                e.keyCode === 85 ||
+                e.keyCode === 117)) {
+               return false;
+           } else {
+               return true;
+           }
+          };
+            $(document).keypress("u",function(e) {
+              if(e.ctrlKey)
+             {
+               return false;
+              }
+               else
+              {
+              return true;
+             }
+           });
+       </script>
+       <!-- //// -->
+   
+       <!-- F12 Prevent script -->
+   
+       <script language="JavaScript">
+       document.onkeypress = function (event) {
+           event = (event || window.event);
+           if (event.keyCode == 123) {
+              //alert('No F-12');
+               return false;
+           }
+       }
+       document.onmousedown = function (event) {
+           event = (event || window.event);
+           if (event.keyCode == 123) {
+               //alert('No F-keys');
+               return false;
+           }
+       }
+        document.onkeydown = function (event) {
+           event = (event || window.event);
+           if (event.keyCode == 123) {
+               //alert('No F-keys');
+               return false;
+           }
+       }
+       </script>
+    <style>
+        /* Animace pro kodicek */
+        @keyframes pohyb {
+            0% {
+                transform: translateX(0); /* Začátek pohybu */
+            }
+            100% {
+                transform: translateX(calc(100vw - 100px)); /* Ukončení pohybu na konci stránky */
+            }
+        }
+
+        #kodicek-container {
+            position: absolute;
+            width: 100px;
+            height: auto;
+            animation: pohyb 2s linear infinite;
+            margin-top: 35%;
+            color:lightgray;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="nav">
+        <ul>
+            <li><a href="clanky.html">Domov</a></li>
+            <li><a href="pravidla.html">Pravidla</a></li>
+            <li><a href="stravovani.html">Stravování - Purkyňka</a></li>
+        </ul>
+        </div>
+        
+    <div id="obrazek">
+        <a target="_blank"><img src="images/KOD-OHGR930GRE.webp" alt="Pravidla" width="10%"></a>
+    </div>
+    
+    <div id="middle">
+    <br>
+    <h2 style="font-size: 100px">Pravidla</h2><p></p>
+    <a style="font-size: 40px">Pravidla nejsou nějak složitá. Stačí hledat, kampak jsme asi mohli schovat hesla/kódy.</a>
+    </div>
+    
+
+   
+    <div id="spodek">
+        <a href="kodik_x.html", target="_blank"><img src="images/purkynka-logo.png" alt="Logo - Purkyňka" width="10%"></a>
+    </div>
+    
+
+
+</body>
+
+</html>

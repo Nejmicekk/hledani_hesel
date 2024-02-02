@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="utf-8">
+    <title>9XPTR457H6</title>
+    <link rel="stylesheet", href="css/charles-babbage-css.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="timeTracker.js" defer></script>
+    <script>
+        document.onkeydown = function(e) {
+           if (e.ctrlKey &&
+               (e.keyCode === 67 ||
+                e.keyCode === 86 ||
+                e.keyCode === 85 ||
+                e.keyCode === 117)) {
+               return false;
+           } else {
+               return true;
+           }
+          };
+            $(document).keypress("u",function(e) {
+              if(e.ctrlKey)
+             {
+               return false;
+              }
+               else
+              {
+              return true;
+             }
+           });
+       </script>
+       <!-- F12 Prevent script -->
+       <script language="JavaScript">
+       document.onkeypress = function (event) {
+           event = (event || window.event);
+           if (event.keyCode == 123) {
+               return false;
+           }
+       }
+       document.onmousedown = function (event) {
+           event = (event || window.event);
+           if (event.keyCode == 123) {
+               return false;
+           }
+       }
+        document.onkeydown = function (event) {
+           event = (event || window.event);
+           if (event.keyCode == 123) {
+               return false;
+           }
+       }
+       </script>
+</head>
+<body>
+    <div id="vrsek">
+        <a target="_blank"><img src="images/purkynka-logo.png" alt="Logo - Purkyňka" width="10%"></a>
+    </div>
+    <h2>Zadej alespoň 2 kódy ze stránky s tiskárnami. Opravdu?</h2>
+    <div id="secret-form">
+        <form id="code-form">
+            <p>1. kód</p>
+            <label for="kod1"></label>
+            <input type="text" id="kod1" required><br><br>
+            <p>2. kód</p>
+            <label for="kod2"></label>
+            <input type="text" id="kod2" required><br><br>
+            
+            <button type="button" onclick="revealSecret()">Zobrazit kód</button>
+        </form>
+        
+    </div>
+    <p><a href="clanky.html" class="zpet-button">ZPĚT</a></p>
+    <script>
+        function revealSecret() {
+            var kod1 = document.getElementById('kod1').value;
+            var kod2 = document.getElementById('kod2').value;
+            
+            var spravnyKod1 = 'IF98P39BX9';
+            var spravnyKod2 = '903IP338S2';
+            var spravnyKod = 'K9H4JNA832';
+            
+            var pocetSpravnychKodu = 0;
+            
+            if (kod1 === spravnyKod1 || kod1 === spravnyKod || kod1 === spravnyKod2) {
+                pocetSpravnychKodu++;
+            }
+            
+            if (kod2 === spravnyKod2 || kod2 === spravnyKod || kod2 === spravnyKod1) {
+                pocetSpravnychKodu++;
+            }
+            
+            if (pocetSpravnychKodu >= 2) {
+                alert("Hmmmmmm, že by nebyly potřeba kody?")
+            } else {
+                alert('Kodik-8TOGOL0988');
+            }
+        }
+        </script>
+</body>
+</html>
