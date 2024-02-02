@@ -105,7 +105,11 @@ h1 {
     }
 
     li {
-        margin-left: 20px;
+        margin-left: 10px; /* Změna mezer mezi položkami navigace pro mobilní zařízení */
+    }
+
+    li a {
+        font-size: 30px; /* Změna velikosti textu navigace pro mobilní zařízení */
     }
 
     h1 {
